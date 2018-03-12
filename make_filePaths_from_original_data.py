@@ -25,9 +25,8 @@ print "Creating %s" % filepaths_file
 assays = [join(BASE_DIRECTORY, x) for x in os.listdir(BASE_DIRECTORY)]
 assays = sorted(filter(os.path.isdir, assays))
 for assay in assays:
-    pngs = sorted([x for x in glob(assay + "/*"))
+    pngs = sorted([x for x in glob(assay + "/*")])
 
     with open(filepaths_file, 'a') as f:
         for png in pngs:
-            f.write("Dataset:name:%s\t%s\n" % (
-                basename(assay), png)
+            f.write("Dataset:name:%s\t%s\n" % (basename(assay), png))
