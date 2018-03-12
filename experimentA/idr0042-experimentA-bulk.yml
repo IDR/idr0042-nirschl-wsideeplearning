@@ -4,4 +4,3 @@ path: "idr0042-experimentA-filePaths.tsv"
 columns:
     - target
     - path
-    - name
