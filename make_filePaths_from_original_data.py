@@ -28,7 +28,7 @@ print "Creating %s" % filepaths_file
 
 # List all assay folders under base directory
 for d in ASSAYS.keys():
-    pngs = sorted([x for x in glob(d + "/*")])
+    pngs = sorted([x for x in glob(join(BASE_DIRECTORY, d) + "/*")])
 
     with open(filepaths_file, 'a') as f:
         for png in pngs:
