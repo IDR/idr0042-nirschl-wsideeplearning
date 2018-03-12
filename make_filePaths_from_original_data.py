@@ -3,10 +3,15 @@
 
 from glob import glob
 import os
-from os.path import basename, join
+from os.path import join
 import sys
 
 BASE_DIRECTORY = "/uod/idr/filesets/idr0042-nirschl-wsideeplearning/"
+ASSAYS = {
+    "held-out_validation": "test",
+    "training/fold_1": "training",
+    "training/test_fold_1": "training",
+}
 
 if not os.path.exists(BASE_DIRECTORY):
     print "Cannot find the raw data directory. Exiting."
@@ -22,11 +27,9 @@ if os.path.exists(filepaths_file):
 print "Creating %s" % filepaths_file
 
 # List all assay folders under base directory
-assays = [join(BASE_DIRECTORY, x) for x in os.listdir(BASE_DIRECTORY)]
-assays = sorted(filter(os.path.isdir, assays))
-for assay in assays:
-    pngs = sorted([x for x in glob(assay + "/*")])
+for d in ASSAYS.keys():
+    pngs = sorted([x for x in glob(d + "/*")])
 
     with open(filepaths_file, 'a') as f:
         for png in pngs:
-            f.write("Dataset:name:%s\t%s\n" % (basename(assay), png))
+            f.write("Dataset:name:%s\t%s\n" % (ASSAYS[d], png))
