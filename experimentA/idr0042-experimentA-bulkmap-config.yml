@@ -36,8 +36,8 @@ columns:
   - name: Characteristics [Sex]
     clientname: Sex
     include: yes
-  - name: "Characteristics [Ethnic/ Racial group]"
-    clientname: "Ethnic/ Racial group"
+  - name: Characteristics [Ethnic or Racial group]
+    clientname: Ethnic or Racial group
     include: yes
   - name: Characteristics [Age in years]
     clientname: Age in years

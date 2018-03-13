@@ -14,7 +14,10 @@ df = pandas.concat([df1, df2])
 
 # Generate the dataset and image name columns
 df['Dataset Name'] = df['Assay Name']
-df.rename(index=str, columns={'Source Name': 'Image Name'}, inplace=True)
+df.rename(index=str, columns={
+    'Source Name': 'Image Name',
+    'Characteristics [Ethnic/ Racial group]':
+        'Characteristics [Ethnic or Racial Group]'}, inplace=True)
 
 # Reorder columns
 cols = df.columns.tolist()
