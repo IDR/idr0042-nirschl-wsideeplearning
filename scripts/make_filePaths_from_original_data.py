@@ -19,7 +19,7 @@ if not os.path.exists(BASE_DIRECTORY):
 
 # Determine base location for pattern files
 metadata_dir = os.path.dirname(os.path.realpath(__file__))
-filepaths_file = join(metadata_dir, "experimentA",
+filepaths_file = join(metadata_dir, "..", "experimentA",
                       "idr0042-experimentA-filePaths.tsv")
 
 if os.path.exists(filepaths_file):

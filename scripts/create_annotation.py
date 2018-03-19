@@ -2,15 +2,14 @@
 # Generate annotation.csv from original assays file
 
 import pandas
+import os
+from os.path import join
 
-TEST_FILE = 'nirschl_upenn_heart_test_image_assay_metadata.txt'
-TRAINING_FILE = 'nirschl_upenn_heart_training_image_assay_metadata.txt'
-
+scripts_dir = os.path.dirname(os.path.realpath(__file__))
+assays_file = join(scripts_dir, "..", "experimentA", "idr0042-assays.txt")
 
 # Read the assays file
-df1 = pandas.read_csv('experimentA/%s' % TEST_FILE, sep='\t')
-df2 = pandas.read_csv('experimentA/%s' % TRAINING_FILE, sep='\t')
-df = pandas.concat([df1, df2])
+df = pandas.read_csv(assays_file, sep='\t')
 
 # Generate the dataset and image name columns
 df['Dataset Name'] = df['Assay Name']
@@ -25,5 +24,6 @@ cols.insert(0, cols.pop(cols.index('Dataset Name')))
 df = df[cols]
 
 # Create annotation
-df.to_csv('experimentA/idr0042-experimentA-annotation.csv', sep=',',
-          index=False)
+df.to_csv(
+    join(scripts_dir, "..", "experimentA/idr0042-experimentA-annotation.csv"),
+    sep=',', index=False)
