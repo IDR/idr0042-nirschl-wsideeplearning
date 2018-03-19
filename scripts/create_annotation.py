@@ -6,7 +6,8 @@ import os
 from os.path import join
 
 scripts_dir = os.path.dirname(os.path.realpath(__file__))
-assays_file = join(scripts_dir, "..", "experimentA", "idr0042-assays.txt")
+assays_file = join(
+    scripts_dir, "..", "experimentA", "idr0042-experimentA-assays.txt")
 
 # Read the assays file
 df = pandas.read_csv(assays_file, sep='\t')
