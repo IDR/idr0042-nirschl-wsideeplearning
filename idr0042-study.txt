@@ -53,14 +53,7 @@ Experiment Imaging Method Term Accession	FBbi_00000243	FBbi_00000010	FBbi_000000
 Experiment Comments	Detection of clinical heart failure or severe tissue pathology from images of cardiac histopathology using convolutional neural networks.					
 						
 # assay files						
-Experiment Assay File	nirschl_upenn_heart_training_image_assay_metadata.txt					
-Experiment Assay File Format	tab-delimited text					
-Assay Experimental Conditions	diagnosis	organism	organism part	disease subtype	sex	ethnic/ racial group
-Assay Experimental Conditions Term Source REF	SNOMED	NCBITaxon	UBERON	CVDO	PATO	SNOMED
-Assay Experimental Conditions Term Accession	"SNOMED_D3-16007, SNOMED_F-30001"	NCBITaxon_9606	UBERON_0000948	"CVDO_0000558, CVDO_0000569, CVDO_0000591 "	"PATO_0000383, PATO_0000384"	"SNOMED_S-62310, SNOMED_S-0003D, SNOMED_S-00045, SNOMED_S-00054, SNOMED_S-00041"
-Quality Control Description	"Training and held-out test datasets were randomly allocated prior to image analysis. The training dataset was split into three folds for cross-validation to monitor training progress. The held-out test dataset was tested after all training, fine-tuning, and optimization was performed."					
-						
-Experiment Assay File	nirschl_upenn_heart_test_image_assay_metadata.txt					
+Experiment Assay File	idr0042-experimentA-assays.txt					
 Experiment Assay File Format	tab-delimited text					
 Assay Experimental Conditions	diagnosis	organism	organism part	disease subtype	sex	ethnic/ racial group
 Assay Experimental Conditions Term Source REF	SNOMED	NCBITaxon	UBERON	CVDO	PATO	SNOMED
