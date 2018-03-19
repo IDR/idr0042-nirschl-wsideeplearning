@@ -30,17 +30,20 @@ columns:
   - name: Characteristics [Diagnosis]
     clientname: Diagnosis
     include: yes
-  - name: Characteristics [Disease subtype]
-    clientname: Disease subtype
+  - name: Characteristics [Disease Subtype]
+    clientname: Disease Subtype
     include: yes
   - name: Characteristics [Sex]
     clientname: Sex
     include: yes
-  - name: Characteristics [Ethnic or Racial group]
-    clientname: Ethnic or Racial group
+  - name: Characteristics [Ethnic or Racial Group]
+    clientname: Ethnic or Racial Group
     include: yes
-  - name: Characteristics [Age in years]
-    clientname: Age in years
+  - name: Characteristics [Age]
+    clientname: Age
+    include: yes
+  - name: Characteristics [Individual]
+    clientname: Individual
     include: yes
 
   ######################################################################

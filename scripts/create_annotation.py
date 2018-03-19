@@ -14,10 +14,7 @@ df = pandas.read_csv(assays_file, sep='\t')
 
 # Generate the dataset and image name columns
 df['Dataset Name'] = df['Assay Name']
-df.rename(index=str, columns={
-    'Source Name': 'Image Name',
-    'Characteristics [Ethnic/ Racial group]':
-        'Characteristics [Ethnic or Racial group]'}, inplace=True)
+df.rename(index=str, columns={'Source Name': 'Image Name'}, inplace=True)
 
 # Reorder columns
 cols = df.columns.tolist()
