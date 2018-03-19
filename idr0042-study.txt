@@ -6,7 +6,7 @@ Study Title	A Deep-learning classifier identifies patients with clinical heart f
 Study Type	histology					
 Study Type Term Source REF						
 Study Type Term Accession						
-Study Description	Cardiac histopathology from human patients with clinical heart failure or cadaveric donor hearts from patients without clinical heart failure.					
+Study Description	Cardiac histopathology from human patients with clinical heart failure or cadaveric donor hearts from patients without clinical heart failure.	Human tissue research: Human heart tissue was procured from two separate groups of subjects: heart transplant or LVAD recipients with severe heart failure (Fal), and brain dead, organ donors with no history of heart failure (non-failing, NF). Tissue from patients with ischemic cardiomyopathy sampled infarct-free regions.  No organs or tissue were procured from prisoners. Prospective informed consent for research use of heart tissue was obtained from all transplant or LVAD recipients and next-of-kin in the case of organ donors. All patient data and images were de-identified, and all protocols were performed in accordance with relevant guidelines for research involving tissue from human subjects. Tissue used in this study was collected and processed at the Cardiovascular Research Institute and the Department of Pathology and Laboratory Medicine at the University of Pennsylvania between 2008 and 2013. All patients were from the same institutional cohort. All study procedures were approved or waived by the University of Pennsylvania Institutional Review Board				
 Study Organism	Homo sapiens					
 Study Organism Term Source REF	NCBITaxon					
 Study Organism Term Accession	NCBITaxon_9606					
@@ -47,9 +47,9 @@ Comment[IDR Experiment Name]	idr0042-nirschl-wsideeplearning/experimentA
 Experiment Description	Histopathology sub-image from patient whole-slide images from patients with end-stage clinical heart failure or cadaveric donor hearts from patients without heart failure.					
 Experiment Size	Datasets: 3	2D Images: 2299	Average Image Dimension (XYZCT): 250 x 250 x 1 x 3 x 1	Total Mb: 314 Mb		
 Experiment Example Images						
-Experiment Imaging Method	bright-field microscopy	formaldehyde fixed tissue	tissue in paraffin embedment	sectioned tissue		
-Experiment Imaging Method Term Source REF	FBbi	FBbi	FBbi	FBbi		
-Experiment Imaging Method Term Accession	FBbi_00000243	FBbi_00000010	FBbi_00000020	FBbi_00000026		
+Experiment Imaging Method	bright-field microscopy		
+Experiment Imaging Method Term Source REF	FBbi			
+Experiment Imaging Method Term Accession	FBbi_00000243		
 Experiment Comments	Detection of clinical heart failure or severe tissue pathology from images of cardiac histopathology using convolutional neural networks.					
 						
 # assay files						
@@ -58,17 +58,11 @@ Experiment Assay File Format	tab-delimited text
 Assay Experimental Conditions	Individual	Disease
 Assay Experimental Conditions Term Source REF	EFO	EFO
 Assay Experimental Conditions Term Accession	EFO_0000542	EFO_0000408
-Quality Control Description	"Training and held-out test datasets were randomly allocated prior to image analysis. The training dataset was split into three folds for cross-validation to monitor training progress. The held-out test dataset was tested after all training, fine-tuning, and optimization was performed."					
+Quality Control Description	Training and held-out test datasets were randomly allocated prior to image analysis. The training dataset was split into three folds for cross-validation to monitor training progress. The held-out test dataset was tested after all training, fine-tuning, and optimization was performed.					
 						
 # Protocols						
-Protocol Name	training dataset					
-Protocol Type	training					
-Protocol Type Term Source REF	NA					
-Protocol Type Term Accession	NA					
-Protocol Description	"Human tissue research: Human heart tissue was procured from two separate groups of subjects: heart transplant or LVAD recipients with severe heart failure (Fal), and brain dead, organ donors with no history of heart failure (non-failing, NF). Tissue from patients with ischemic cardiomyopathy sampled infarct-free regions.  No organs or tissue were procured from prisoners. Prospective informed consent for research use of heart tissue was obtained from all transplant or LVAD recipients and next-of-kin in the case of organ donors. All patient data and images were de-identified, and all protocols were performed in accordance with relevant guidelines for research involving tissue from human subjects. Tissue used in this study was collected and processed at the Cardiovascular Research Institute and the Department of Pathology and Laboratory Medicine at the University of Pennsylvania between 2008 and 2013. All patients were from the same institutional cohort. All study procedures were approved or waived by the University of Pennsylvania Institutional Review Board."	"Dataset collection and histological processing: Both failing and non-failing hearts received in situ cold cardioplegia in the operating room and were immediately placed on wet ice in 4°C Krebs-Henseleit buffer. Within 4 hours of cardiectomy, transmural tissue from the left ventricular free wall were fixed in 4% paraformaldehyde and later processed, embedded in paraffin, sectioned and stained with hematoxylin and eosin (H&E) for morphologic analysis. Whole-slide images were acquired at 20x magnification using an Aperio ScanScope slide scanner. Images were down-sampled to 5x magnification for image analysis, a magnification sufficient for expert assessment of gross tissue pathology. The allocation to the training and held-out test cohort was random and performed prior to image analysis."				
-						
-Protocol Name	held-out test dataset					
-Protocol Type	test					
-Protocol Type Term Source REF	NA					
-Protocol Type Term Accession	NA					
-Protocol Description	"Human tissue research: Human heart tissue was procured from two separate groups of subjects: heart transplant or LVAD recipients with severe heart failure (Fal), and brain dead, organ donors with no history of heart failure (non-failing, NF). Tissue from patients with ischemic cardiomyopathy sampled infarct-free regions.  No organs or tissue were procured from prisoners. Prospective informed consent for research use of heart tissue was obtained from all transplant or LVAD recipients and next-of-kin in the case of organ donors. All patient data and images were de-identified, and all protocols were performed in accordance with relevant guidelines for research involving tissue from human subjects. Tissue used in this study was collected and processed at the Cardiovascular Research Institute and the Department of Pathology and Laboratory Medicine at the University of Pennsylvania between 2008 and 2013. All patients were from the same institutional cohort. All study procedures were approved or waived by the University of Pennsylvania Institutional Review Board."					
+Protocol Name	treatment protocol	image acquisition				
+Protocol Type	treatment protocol	image acquisition				
+Protocol Type Term Source REF	EFO	EFO				
+Protocol Type Term Accession	EFO_0003969					
+Protocol Description	Dataset collection and histological processing: Both failing and non-failing hearts received in situ cold cardioplegia in the operating room and were immediately placed on wet ice in 4°C Krebs-Henseleit buffer. Within 4 hours of cardiectomy, transmural tissue from the left ventricular free wall were fixed in 4% paraformaldehyde and later processed, embedded in paraffin, sectioned and stained with hematoxylin and eosin (H&E) for morphologic analysis.	Whole-slide images were acquired at 20x magnification using an Aperio ScanScope slide scanner. Images were down-sampled to 5x magnification for image analysis, a magnification sufficient for expert assessment of gross tissue pathology. The allocation to the training and held-out test cohort was random and performed prior to image analysis.								
