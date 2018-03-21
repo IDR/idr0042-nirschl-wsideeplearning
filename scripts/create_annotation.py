@@ -4,7 +4,6 @@
 import logging
 import pandas
 import os
-from os.path import join
 
 logging.basicConfig(level=logging.DEBUG)
 
