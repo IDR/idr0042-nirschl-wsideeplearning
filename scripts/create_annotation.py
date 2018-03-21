@@ -22,6 +22,7 @@ df.rename(index=str, columns={'Source Name': 'Image Name'}, inplace=True)
 
 # Reorder columns
 cols = df.columns.tolist()
+cols.pop(cols.index('Assay Name'))
 cols.insert(0, cols.pop(cols.index('Dataset Name')))
 df = df[cols]
 
