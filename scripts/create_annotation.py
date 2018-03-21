@@ -1,13 +1,17 @@
 #!/usr/bin/env python
 # Generate annotation.csv from original assays file
 
+import logging
 import pandas
 import os
 from os.path import join
 
+logging.basicConfig(level=logging.DEBUG)
+
 scripts_dir = os.path.dirname(os.path.realpath(__file__))
-assays_file = join(
+assays_file = os.path.join(
     scripts_dir, "..", "experimentA", "idr0042-experimentA-assays.txt")
+logging.info("Reading %s" % assays_file)
 
 # Read the assays file
 df = pandas.read_csv(assays_file, sep='\t')
@@ -22,6 +26,7 @@ cols.insert(0, cols.pop(cols.index('Dataset Name')))
 df = df[cols]
 
 # Create annotation
-df.to_csv(
-    join(scripts_dir, "..", "experimentA/idr0042-experimentA-annotation.csv"),
-    sep=',', index=False)
+csv_file = os.path.join(
+    scripts_dir, "..", "experimentA", "idr0042-experimentA-annotation.csv")
+logging.info("Generating %s" % csv_file)
+df.to_csv(csv_file, sep=',', index=False)
