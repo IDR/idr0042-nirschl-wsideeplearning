@@ -45,6 +45,9 @@ columns:
   - name: Characteristics [Individual]
     clientname: Individual
     include: yes
+  - name: Characteristics [Clinical History]
+    clientname: Clinical History
+    include: yes
 
   ######################################################################
   # mapr groups
