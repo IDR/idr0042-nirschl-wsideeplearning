@@ -17,7 +17,7 @@ Study Public Release Date
 # Study Publication						
 Study PubMed ID	29614076
 Study Publication Title	A Deep-learning classifier identifies patients with clinical heart failure using whole-slide images of H&E tissue					
-Study Author List	"Jeffrey J. Nirschl, Andrew Janowczyk, Eliot G. Peyster, Renee Frank, Kenneth B. Margulies, Michael D. Feldman, Anant Madabhushi"					
+Study Author List	Jeffrey J. Nirschl, Andrew Janowczyk, Eliot G. Peyster, Renee Frank, Kenneth B. Margulies, Michael D. Feldman, Anant Madabhushi					
 Study PMC ID
 Study DOI	https://doi.org/10.1371/journal.pone.0192726
 						
@@ -32,7 +32,7 @@ Study Data DOI	https://doi.org/10.17867/10000113
 Study Person Last Name	Madabhushi					
 Study Person First Name	Anant					
 Study Person Email	axm788@case.edu					
-Study Person Address	"Department of Biomedical Engineering, Case Western Reserve University, Cleveland, OH, 44106, USA"					
+Study Person Address	Department of Biomedical Engineering, Case Western Reserve University, Cleveland, OH, 44106, USA					
 Study Person Roles	Corresponding author					
 						
 Term Source Name	NCBITaxon	CVDO	FBbi	PATO	UBERON	SNOMED
