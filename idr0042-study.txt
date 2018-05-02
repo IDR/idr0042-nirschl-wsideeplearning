@@ -46,7 +46,7 @@ Experiment Number	1
 Comment[IDR Experiment Name]	idr0042-nirschl-wsideeplearning/experimentA					
 Experiment Description	Histopathology sub-image from patient whole-slide images from patients with end-stage clinical heart failure or cadaveric donor hearts from patients without heart failure.					
 Experiment Size	Datasets: 3	2D Images: 2299	Average Image Dimension (XYZCT): 250 x 250 x 1 x 3 x 1	Total Mb: 314 Mb		
-Experiment Example Images						
+Experiment Example Images	https://idr.openmicroscopy.org/webclient/?show=image-3428111
 Experiment Imaging Method	bright-field microscopy		
 Experiment Imaging Method Term Source REF	FBbi			
 Experiment Imaging Method Term Accession	FBbi_00000243		
