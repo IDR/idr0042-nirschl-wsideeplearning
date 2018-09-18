@@ -59,3 +59,10 @@ columns:
         - name: Characteristics [Organism]
           clientname: Organism
           include: yes
+
+advanced:
+  ignore_missing_primary_key: yes
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
