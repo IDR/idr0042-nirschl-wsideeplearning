@@ -43,7 +43,8 @@ Term Source URI	https://www.ncbi.nlm.nih.gov/taxonomy	https://www.ebi.ac.uk/ols/
 "# Experiment Section containing all information relative to each experiment in the study including materials used, protocols names and description, phenotype names and description. For multiple experiments this section should be repeated. Copy and paste the whole section below and fill out for the next experiment"
 						
 Experiment Number	1					
-Comment[IDR Experiment Name]	idr0042-nirschl-wsideeplearning/experimentA					
+Comment[IDR Experiment Name]	idr0042-nirschl-wsideeplearning/experimentA	
+Experiment Sample Type	tissue
 Experiment Description	Histopathology sub-image from patient whole-slide images from patients with end-stage clinical heart failure or cadaveric donor hearts from patients without heart failure.					
 Experiment Size	Datasets: 3	2D Images: 2299	Average Image Dimension (XYZCT): 250 x 250 x 1 x 3 x 1	Total Mb: 314 Mb		
 Experiment Example Images	https://idr.openmicroscopy.org/webclient/?show=image-3428111	https://idr.openmicroscopy.org/webclient/img_detail/3428111
