@@ -16,8 +16,8 @@ Study Public Release Date	2018-04-12
 						
 # Study Publication						
 Study PubMed ID	29614076
-Study Publication Title	A Deep-learning classifier identifies patients with clinical heart failure using whole-slide images of H&E tissue					
-Study Author List	Jeffrey J. Nirschl, Andrew Janowczyk, Eliot G. Peyster, Renee Frank, Kenneth B. Margulies, Michael D. Feldman, Anant Madabhushi					
+Study Publication Title	A deep-learning classifier identifies patients with clinical heart failure using whole-slide images of H&E tissue.					
+Study Author List	Nirschl JJ, Janowczyk A, Peyster EG, Frank R, Margulies KB, Feldman MD, Madabhushi A					
 Study PMC ID	PMC5882098
 Study DOI	https://doi.org/10.1371/journal.pone.0192726
 						
