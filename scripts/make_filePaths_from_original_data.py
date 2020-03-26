@@ -14,7 +14,7 @@ ASSAYS = {
 }
 
 if not os.path.exists(BASE_DIRECTORY):
-    print "Cannot find the raw data directory. Exiting."
+    print("Cannot find the raw data directory. Exiting.")
     sys.exit(0)
 
 # Determine base location for pattern files
@@ -24,7 +24,7 @@ filepaths_file = join(metadata_dir, "..", "experimentA",
 
 if os.path.exists(filepaths_file):
     os.remove(filepaths_file)
-print "Creating %s" % filepaths_file
+print("Creating %s" % filepaths_file)
 
 # List all assay folders under base directory
 for d in ASSAYS.keys():
